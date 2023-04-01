@@ -130,7 +130,7 @@ Koeficijent ***l*** nazivamo **odsječak** na osi ordinata.
 
 Dan je pravac ***2x−3y+6=0***. Odredi nagib tog pravca i njegov odsječak na osi ***y***.
 
-**Rješenje: **
+**Rješenje:**
 
 Jednadžba danog pravca u eksplicitnom obliku glasi
 $$
