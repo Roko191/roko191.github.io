@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pikado</title>
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <script src="./js/jquery.slim.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <div class="container "id="warn-box">
+  </div>
+  <div class="container title">
+    <h1>Pikado broajač</h1><br>
+  </div>
+  <div class="container" id="configIgre">
+    <h2>Konfiguracija igre</h2><br>
+    <div id="warn-box">
+    </div>
+    <div class="poeni">
+      <h3> U koliko poena želiš igrati! </h3><br>
+      <div class="row">
+        <div class="col"><button id="301" type="button" class="btn btn-outline-secondary" onclick="setPoints(301)">301</button></div>
+        <div class="col"><button id="501" type="button" class="btn btn-outline-secondary" onclick="setPoints(501)">501</button></div>
+        <div class="col"><button id="701" type="button" class="btn btn-outline-secondary" onclick="setPoints(701)">701</button></div>
+        <div class="col"><button id="1001" type="button" class="btn btn-outline-secondary" onclick="setPoints(1001)">1001</button></div>
+      </div>
+    </div><br>
+    <div class="igraci" id="igraci">
+      <div class="broj">
+        <h2> Broj igrača </h2><br>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Upiši broj igrača</span>
+          </div>
+          <input id="broj-igraca" type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="min. 1 igrač max 4.">
+        </div>
+        <button id="dodaj-igrace" type="button" class="btn btn-outline-primary">Dodaj Igrače</button>
+      </div><br>
+    <div id="imena">
+    <h3>Imena igrača</h3>
+  </div>
+  <button id="game-start" type="button" class="btn btn-outline-primary">Pokreni Igru</button>
+</div></div>
+  <div class="container" id="gameScreen">
+    <h2>Igra</h2>
+    <div class="gspRound">
+      <p id="gspRoundP">Round: 1</p>
+    </div>
+    <div id="gsPoints">
+      <div class="row" >
+        <div class="col" id="gspPlayer1">
+
+        </div>
+        <div class="col" id="gspPlayer2">
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" id="gspPlayer2">
+
+        </div>
+        <div class="col">
+          
+        </div>
+      </div>
+      <div class="unosBodova">
+        <input id="bodovi-input" type="number" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default" placeholder="min. 3  max 160."><br>
+        <button id="bodovi-submit" type="button" class="btn btn-outline-primary">Unesi</button>
+      </div>
+    </div>
+  </div>
+  <script src="./js/game.js"></script>
+  <script src="./js/player.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
