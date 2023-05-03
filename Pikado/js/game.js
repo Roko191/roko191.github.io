@@ -79,7 +79,7 @@ function Game(igraci, points, brojIgraca)
         if(igraci[playerIndex].points < 0)
         {
             console.log("Prešao si potreban broj podova. Vraćam te na staro");
-            igraci[playerIndex].points += pointsScored;
+            igraci[playerIndex].points =  Number(igraci[playerIndex].points) + Number(pointsScored);
         }
         if(igraci[playerIndex].points == 0)
         {
